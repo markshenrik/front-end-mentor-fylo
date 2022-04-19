@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(217, 28%, 15%);
+    align-items: center;
+    padding: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header .logo a img{
+    width: 120px;
+}
+
+.menu{
+    display: flex;
+}
+
+.header nav .menu li{
+    margin-right: 30px;
+}
+
+.intro{
+    text-align: center;
+    background-color: hsl(217, 28%, 15%);
+    /* background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg) center center no-repeat;
+    background-position: bottom; */
+}
+
+main .intro .intro-information{
+    width: 400px;
+    margin: auto;
+    border: 5px solid white;
+}
+
+
+
+main .other-informations{
+    display: grid;
+    grid-template-areas: "Access Security"
+                         "Collaboration Store";
+    grid-template: 280px 280px / 300px 300px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(218, 28%, 13%);
+}
+
+main .other-informations .functionality{
+    max-width: 350px;
+    padding-top: 20px;
+    text-align: center;
+
+}
+
