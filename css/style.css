@@ -1,10 +1,14 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
 .header{
     display: flex;
     justify-content: space-between;
     background-color: hsl(217, 28%, 15%);
     align-items: center;
     padding: 40px;
-    font-family: 'Raleway', sans-serif;
 }
 
 .header .logo a img{
@@ -27,12 +31,23 @@
 }
 
 main .intro .intro-information{
-    width: 400px;
+    width: 500px;
     margin: auto;
-    border: 5px solid white;
 }
 
+.intro-information h2, .intro-information p, .intro-information a{
+    margin-bottom: 40px;
+}
 
+.intro-information a{
+    background-color: hsl(198, 60%, 50%);
+    padding: 15px 80px;
+    border-radius: 30px;
+}
+
+main{
+    background-color: hsl(218, 28%, 13%);
+}
 
 main .other-informations{
     display: grid;
@@ -41,13 +56,108 @@ main .other-informations{
     grid-template: 280px 280px / 300px 300px;
     justify-content: space-evenly;
     align-items: center;
-    background-color: hsl(218, 28%, 13%);
 }
 
 main .other-informations .functionality{
-    max-width: 350px;
+    max-width: 450px;
     padding-top: 20px;
     text-align: center;
-
 }
 
+main .other-informations .functionality h3{
+    padding: 12px 0 12px 0;
+}
+
+main .productive{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* main .productive .stay-productive{
+    width: 500px;
+} */
+
+main .productive .stay-productive p{
+    padding: 10px;
+    width: 550px;
+}
+
+
+main .productive .stay-productive h2{
+    width: 200px;
+}
+
+main .feedbacks{
+    display: flex;
+    padding: 80px;
+    justify-content: space-evenly;
+    position: relative;
+}
+main .feedbacks .quotes{
+    height: 30px;
+    position: absolute;
+    left: 110px;
+    top: 55px;
+}
+main .feedbacks .testimonial{
+    max-width: 350px;
+    background-color: hsl(219, 30%, 18%);
+    padding: 35px;
+    z-index: 1;
+}
+
+main .feedbacks .testimonial .profile img{
+    border-radius: 100%;
+    width: 50px;
+    margin-right: 10px;
+}
+
+main .feedbacks .testimonial .profile{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+main .feedbacks .testimonial .profile .profile-description{
+    margin-top: 10px;
+}
+
+main .feedbacks .testimonial p{
+    margin-bottom: 10px;
+}
+
+main .email{
+    background-color: hsl(217, 28%, 15%);
+    text-align: center;
+    margin: auto;
+    width: fit-content;
+    padding: 30px 60px;
+}
+
+main .email p{
+    width: 650px;
+    padding: 20px;
+    text-align: center;
+}
+
+main .email form{
+    padding-top: 0;
+}
+main .email form #email-input{
+    border-radius: 30px;
+    padding-top: 20px;
+    width: 500px;
+    margin-bottom: 0;
+}
+
+main .email form .email-submit{
+    background-color: hsl(198, 60%, 50%);
+    padding: 10px 30px;
+    border-radius: 30px;   
+}
+
+.footer{
+    background-color: hsl(216, 53%, 9%);
+    padding-top: 200px;
+}
