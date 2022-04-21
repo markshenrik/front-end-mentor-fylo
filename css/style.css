@@ -1,7 +1,6 @@
 body{
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
 }
 .header{
     display: flex;
@@ -9,6 +8,12 @@ body{
     background-color: hsl(217, 28%, 15%);
     align-items: center;
     padding: 40px;
+}
+
+h1, h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 40px
 }
 
 .header .logo a img{
@@ -23,23 +28,30 @@ body{
     margin-right: 30px;
 }
 
-.intro{
+
+.call-to-actions{
     text-align: center;
     background-color: hsl(217, 28%, 15%);
-    /* background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg) center center no-repeat;
-    background-position: bottom; */
+    background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 950px;
+
 }
 
-main .intro .intro-information{
-    width: 500px;
+.call-to-actions .intro-information h1{
+    width: 700px;
+    margin: auto;
+    line-height: 55px;
+}
+
+.call-to-actions .intro-information p{
+    padding: 40px;
+    width: 520px;
     margin: auto;
 }
 
-.intro-information h2, .intro-information p, .intro-information a{
-    margin-bottom: 40px;
-}
-
-.intro-information a{
+.call-to-actions .intro-information a{
     background-color: hsl(198, 60%, 50%);
     padding: 15px 80px;
     border-radius: 30px;
@@ -53,9 +65,9 @@ main .other-informations{
     display: grid;
     grid-template-areas: "Access Security"
                          "Collaboration Store";
-    grid-template: 280px 280px / 300px 300px;
+    grid-template: 280px 280px / 370px 370px;
     justify-content: space-evenly;
-    align-items: center;
+    align-content: center;
 }
 
 main .other-informations .functionality{
@@ -68,24 +80,41 @@ main .other-informations .functionality h3{
     padding: 12px 0 12px 0;
 }
 
+main .other-informations .functionality img{
+    height: 80px;
+}
+
 main .productive{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 10px;
 }
 
-/* main .productive .stay-productive{
-    width: 500px;
-} */
+main .productive .stay-productive h2{
+    width: 400px;
+    line-height: 50px;
+}
 
 main .productive .stay-productive p{
-    padding: 10px;
+    margin-top: 10px;
     width: 550px;
 }
 
+main .productive .stay-productive a{
+    text-decoration: underline;
+    color: hsl(176, 68%, 64%);
+}
 
-main .productive .stay-productive h2{
-    width: 200px;
+main .productive .stay-productive a::after{
+    content: "";
+    background-image: url(../fylo-dark-theme-landing-page-master/images/icon-arrow.svg);
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    position: relative;
+    left: 5px;
+    top: 2px;
 }
 
 main .feedbacks{
@@ -127,37 +156,111 @@ main .feedbacks .testimonial p{
     margin-bottom: 10px;
 }
 
-main .email{
+main .email-container{
     background-color: hsl(217, 28%, 15%);
     text-align: center;
     margin: auto;
     width: fit-content;
     padding: 30px 60px;
+    position: relative;
+    z-index: 1;
+    top: 100px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
 }
 
-main .email p{
-    width: 650px;
-    padding: 20px;
+main .email-container h2{
+    font-size: 30px;
+    padding-top: 15px;
+}
+main .email-container p{
+    width: 770px;
+    padding: 30px;
     text-align: center;
 }
 
-main .email form{
+main .email-container form{
     padding-top: 0;
+    
+    
 }
-main .email form #email-input{
+main .email-container form #email-input{
     border-radius: 30px;
-    padding-top: 20px;
-    width: 500px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    margin-right: 15px;
+    width: 400px;
     margin-bottom: 0;
 }
 
-main .email form .email-submit{
+main .email-container form .email-submit{
     background-color: hsl(198, 60%, 50%);
-    padding: 10px 30px;
+    padding: 15px 30px;
     border-radius: 30px;   
 }
 
 .footer{
     background-color: hsl(216, 53%, 9%);
     padding-top: 200px;
+    
 }
+
+.footer .footer-logo{
+    padding-left: 60px;
+}
+
+.footer .footer-logo img{
+    width: 90px;
+}
+
+.footer .contact{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-bottom: 70px;
+    padding-top: 35px;
+}
+
+.footer .contact .location{
+    display: flex;
+    align-content: flex-end;
+}
+
+.footer .contact .location img{
+    height: 15px;
+}
+
+.footer .contact .location p{
+    width: 350px;
+    margin-left: 15px;
+    position: relative;
+    bottom: 5px;
+
+}
+
+.footer .contact .phone-email #phone-number, .footer .contact .phone-email #fylo-email{
+    margin-right: 15px;
+    width: 15px;
+    line-height: 10px;
+}
+
+.footer .social-icons img{
+    width: 25px;
+}
+
+.footer .contact .about-us ul li, .footer .contact .contact-us ul li, .footer .contact .phone-email ul li{
+    margin-bottom: 15px;
+}
+
+.footer .contact .phone-email ul li a{
+    position: relative;
+    bottom: 2px;
+}
+
+.footer .contact .social-icons img{
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 100%;
+}
+

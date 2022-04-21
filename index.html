@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
     <link rel="stylesheet" href="./css/reset.css" />
@@ -41,16 +47,16 @@
     </header>
 
     <main>
-      <div class="intro">
+      <div class="call-to-actions">
         <img
           src="./fylo-dark-theme-landing-page-master/images/illustration-intro.png"
           alt="Intro ilustration"
         />
         <div class="intro-information">
-          <h2>All your files in one secure location, accessible anywhere</h2>
+          <h1>All your files in one secure location, accessible anywhere</h1>
           <p>
             Fyle stores all your important files in one secure location. Access
-            them wherever you need, share and collaborate with friends, family,
+            them wherever you need, share and collaborate with friends, family
             and co-workers
           </p>
           <a href="">Get Started</a>
@@ -194,7 +200,7 @@
         </div>
       </div>
 
-      <div class="email">
+      <div class="email-container">
         <h2>Get early access today</h2>
         <p>
           It only takes a minute to sign up and our free starter tier is
@@ -209,7 +215,7 @@
             id="email-input"
           />
           <input
-            type="submit"
+            type="button"
             value="Get Started For Free"
             class="email-submit"
           />
@@ -218,16 +224,17 @@
     </main>
 
     <footer class="footer">
-      <div>
+      <div class="footer-logo">
         <img
           src="./fylo-dark-theme-landing-page-master/images/logo.svg"
           alt="Fylo Logo"
         />
       </div>
 
-      <div>
-        <div>
+      <div class="contact">
+        <div class="location">
           <img
+            id="location-icon"
             src="./fylo-dark-theme-landing-page-master/images/icon-location.svg"
             alt="Location icon"
           />
@@ -238,30 +245,44 @@
             non autem!
           </p>
         </div>
-        <div>
-          <img
-            src="./fylo-dark-theme-landing-page-master/images/icon-phone.svg"
-            alt="Phone icon"
-          />
-          <p>+1-543-123-4567</p>
-          <img
-            src="./fylo-dark-theme-landing-page-master/images/icon-email.svg"
-            alt="Email icon"
-          />
-          <p>example@fylo.com</p>
+        <div class="phone-email">
+          <ul>
+            <li>
+              <img
+                id="phone-number"
+                src="./fylo-dark-theme-landing-page-master/images/icon-phone.svg"
+                alt=""
+              /><a href="#">+1-543-123-4567</a>
+            </li>
+            <li>
+              <img
+                id="fylo-email"
+                src="./fylo-dark-theme-landing-page-master/images/icon-email.svg"
+                alt=""
+              />
+              <a href="#">example@fylo.com</a>
+            </li>
+          </ul>
         </div>
-        <div>
-          <p>About Us</p>
-          <p>Jobs</p>
-          <p>Press</p>
-          <p>Blog</p>
+
+        <div class="about-us">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
-        <div>
-          <p>Contact Us</p>
-          <p>Terms</p>
-          <p>Privacy</p>
+
+        <div class="contact-us">
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
         </div>
-        <div>
+
+        <div class="social-icons">
           <img
             src="./fylo-dark-theme-landing-page-master/images/logo-facebook.svg"
             alt="Facebook icon"
