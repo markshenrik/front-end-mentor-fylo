@@ -207,14 +207,19 @@
           extremely generous. If you have any questions, our support team would
           be happy to help you.
         </p>
+
         <form action="">
           <input
-            type="text"
+            type="email"
+            name="email"
+            id="email-input"
             placeholder="email@example.com"
-            name=""
             class="email-input"
+            onblur="validateEmail()"
+            onfocus="redefineMsg()"
           />
           <a href="#" class="email-submit">Get Started For Free</a>
+          <div class="error" id="error-email"></div>
         </form>
       </div>
     </main>
@@ -279,20 +284,24 @@
         </div>
 
         <div class="social-icons">
-          <a href="#"><img
-            src="./fylo-dark-theme-landing-page-master/images/logo-facebook.svg"
-            alt="Facebook icon"
+          <a href="#"
+            ><img
+              src="./fylo-dark-theme-landing-page-master/images/logo-facebook.svg"
+              alt="Facebook icon"
           /></a>
-          <a href="#"><img
-            src="./fylo-dark-theme-landing-page-master/images/logo-twitter.svg"
-            alt="Twitter icon"
+          <a href="#"
+            ><img
+              src="./fylo-dark-theme-landing-page-master/images/logo-twitter.svg"
+              alt="Twitter icon"
           /></a>
-          <a href="#"><img
-            src="./fylo-dark-theme-landing-page-master/images/logo-instagram.svg"
-            alt="Instagram icon"
+          <a href="#"
+            ><img
+              src="./fylo-dark-theme-landing-page-master/images/logo-instagram.svg"
+              alt="Instagram icon"
           /></a>
         </div>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
