@@ -1,0 +1,74 @@
+@media(max-width: 375px){
+    .header{
+        max-width: 375px;
+        display: flex;
+        padding: 25px;
+        
+    }
+    .header .logo a img{
+        width: 80px;
+    }
+
+    .header nav .menu li{
+        font-size: 0.8rem;
+    }
+    
+    main .call-to-actions img{
+        width: 300px;
+    }
+
+    h1, h2{
+        font-size: 1.5rem;
+    }
+    .call-to-actions{
+        background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 300px;
+    }
+    .call-to-actions .intro-information h1{
+        width: 300px;
+        margin: auto;
+        line-height: 38px;
+    }
+
+    .call-to-actions .intro-information p{
+        padding: 30px;
+        width: 355px;
+        margin: auto;
+        font-size: 0.9rem;
+    }
+
+    main .other-informations{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 400px;
+
+    }
+
+    main .other-informations .functionality{
+        max-width: 350px;
+        padding: 20px 10px 70px;
+        text-align: center;
+    }
+
+    main .productive{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    main .productive img{
+        width: 320px;
+    }
+
+    main .productive .stay-productive{
+        width: 375px;
+        padding: 0 15px;
+        font-size: 1rem;
+        /* margin-right: 500px; */
+        text-align: justify;
+    }
+}

@@ -6,9 +6,11 @@
     box-sizing: border-box;
     color: hsl(0, 0%, 100%);
 }
-/* html{
+
+html{
     font-size: 62,5%;
-} */
+}
+
 a{
     text-decoration: none;
 }
