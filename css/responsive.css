@@ -2,11 +2,13 @@
     .header{
         max-width: 375px;
         display: flex;
+        justify-content: space-between;
         padding: 25px;
         
     }
     .header .logo a img{
         width: 80px;
+        transform: translateY(20%);
     }
 
     .header nav .menu li{
@@ -17,7 +19,7 @@
         width: 300px;
     }
 
-    h1, h2{
+    h1{
         font-size: 1.5rem;
     }
     .call-to-actions{
@@ -65,10 +67,131 @@
     }
 
     main .productive .stay-productive{
-        width: 375px;
-        padding: 0 15px;
+        width: 340px;
+        padding: 15px;
         font-size: 1rem;
-        /* margin-right: 500px; */
-        text-align: justify;
+        transform: translateX(-15px);
+    }
+
+    main .productive .stay-productive h2{
+        width: 350px;
+        font-size: 1.3rem;
+        margin-top: 20px;
+    }
+
+    main .productive .stay-productive p{
+        margin-top: 10px;
+        width: 350px;
+        padding-left: 0;
+        padding-right: 10px;
+    }
+
+    main .feedbacks{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 50px 30px;
+        justify-content: space-evenly;
+        position: relative;
+    }
+
+    main .feedbacks .quotes{
+        height: 20px;
+        position: absolute;
+        left: 55px;
+        top: 30px;
+    }
+
+    main .feedbacks .testimonial{
+        background-color: hsl(219, 30%, 18%);
+        padding: 25px;
+        z-index: 1;
+        font-size: 0.8rem;
+    }
+
+    main .feedbacks .testimonial .profile img{
+        border-radius: 100%;
+        width: 50px;
+        margin-right: 10px;
+    }
+
+    main .feedbacks .testimonial .profile .profile-description{
+        line-height: 25px;
+    }
+    
+    main .email-container{
+        width: 330px;
+        font-size: 1rem;
+        padding: 25px 20px;
+        border-radius: 10px;
+        top: 150px;
+    }
+
+    main .email-container h2{
+        font-size: 1.2rem;
+        padding-top: 15px;
+    }
+
+    main .email-container p{
+        width: 100%;
+        line-height: 25px;
+        padding: 30px 0;
+        text-align: center;
+    }
+
+    main .email-container form .email-input{
+        border-radius: 30px;
+        padding: 15px 0 15px 20px;
+        width: 290px;
+    }
+
+    main .email-container form .email-submit{
+        background-color: hsl(198, 60%, 50%);
+        padding: 8px 30px 8px;
+        border-radius: 30px;   
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer{
+        padding-top: 300px;
+    }
+
+    .footer .footer-logo{
+        padding-left: 45px;
+    }
+
+    .footer .footer-logo img{
+        width: 200px;
+    }
+
+    .footer .contact{
+        display: flex;
+        flex-direction: column; 
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer .contact .location{
+        display: flex;
+        align-content: flex-end;
+        width: 100%;
+    }
+
+    .footer .contact .phone-email{
+        position: relative;
+        bottom: 30px;
+    }
+
+    .footer .contact .location img{
+        height: 15px;
+        margin-left: 0;
+    }
+
+    .footer .social-icons{
+        text-align: center;
+        padding-top: 50px;
+        position: relative;
+        left: 80px;
     }
 }

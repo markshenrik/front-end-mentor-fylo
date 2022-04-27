@@ -26,7 +26,7 @@ h1, h2{
 }
 
 .header nav .menu li{
-    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .header nav .menu li a:hover{
@@ -286,17 +286,25 @@ main .email-container form a:hover{
     font-weight: 700;
 }
 
-.footer .social-icons img{
-    width: 25px;
-}
-
-.footer .contact .social-icons img{
+.footer .contact .social-icons .fab{
     margin-left: 10px;
-    background-color: white;
-    border-radius: 100%;
+    width: 30px;
+    font-size: 25px;
+    padding: 10px;
+    transition: 0.5;
 }
 
-.footer .contact .social-icons img:hover{
-    background-color: aqua;
+.footer .contact .social-icons i:hover{
+    color: hsl(176, 68%, 64%);
+    border-color: hsl(176, 68%, 64%);
 }
 
+.footer .attribution{
+    text-align: center;
+    background-color: black;
+}
+
+.footer .attribution a:hover{
+    text-decoration: underline;
+    font-weight: 700;
+}
