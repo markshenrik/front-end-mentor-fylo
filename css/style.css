@@ -298,13 +298,3 @@ main .email-container form a:hover{
     color: hsl(176, 68%, 64%);
     border-color: hsl(176, 68%, 64%);
 }
-
-.footer .attribution{
-    text-align: center;
-    background-color: black;
-}
-
-.footer .attribution a:hover{
-    text-decoration: underline;
-    font-weight: 700;
-}
