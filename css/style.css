@@ -3,7 +3,7 @@ body{
     line-height: 30px;
 }
 
-.header{
+.header .container{
     display: flex;
     justify-content: space-between;
     background-color: hsl(217, 28%, 15%);
@@ -17,8 +17,8 @@ h1, h2{
     font-size: 2.5rem;
 }
 
-.header .logo a img{
-    width: 90px;
+.header a img{
+    width: 120px;
 }
 
 .menu{
@@ -30,7 +30,6 @@ h1, h2{
 }
 
 .header nav .menu li a:hover{
-    font-weight: 700;
     text-decoration: underline;
 }
 
@@ -45,34 +44,33 @@ h1, h2{
 
 }
 
-.call-to-actions .intro-information h1{
+.call-to-actions .container .intro-information h1{
     width: 700px;
     margin: auto;
     line-height: 55px;
 }
 
-.call-to-actions .intro-information p{
+.call-to-actions .container .intro-information p{
     padding: 40px;
     width: 520px;
     margin: auto;
 }
 
-.call-to-actions .intro-information a{
+.call-to-actions .container .intro-information a{
     background-color: hsl(198, 60%, 50%);
     padding: 15px 80px;
     border-radius: 30px;
 }
 
-.call-to-actions .intro-information a:hover{
+.call-to-actions .container .intro-information a:hover{
     background-color: hsl(176, 68%, 64%);
-    font-weight: 700;
 }
 
 main{
     background-color: hsl(218, 28%, 13%);
 }
 
-main .other-informations{
+main .features .container{
     display: grid;
     grid-template-areas: "Access Security"
                          "Collaboration Store";
@@ -81,48 +79,47 @@ main .other-informations{
     align-content: center;
 }
 
-main .other-informations .functionality{
+main .features .container .functionality{
     max-width: 450px;
     padding-top: 20px;
     text-align: center;
 }
 
-main .other-informations .functionality h3{
+main .features .container .functionality h3{
     padding: 12px 0;
 }
 
-main .other-informations .functionality img{
+main .features .container .functionality img{
     height: 80px;
 }
 
-main .productive{
+main .productive .container{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 10px;
 }
 
-main .productive .stay-productive h2{
+main .productive .container .stay-productive h2{
     width: 400px;
     line-height: 50px;
 }
 
-main .productive .stay-productive p{
+main .productive .container .stay-productive p{
     margin-top: 10px;
     width: 550px;
 }
 
-main .productive .stay-productive a{
+main .productive .container .stay-productive a{
     text-decoration: underline;
     color: hsl(176, 68%, 64%);
 }
 
-main .productive .stay-productive a:hover{
+main .productive .container .stay-productive a:hover{
     color: white;
-    font-weight: 700;
 }
 
-main .productive .stay-productive a::after{
+main .productive .container .stay-productive a::after{
     content: "";
     background-image: url(../fylo-dark-theme-landing-page-master/images/icon-arrow.svg);
     display: inline-block;
@@ -133,46 +130,46 @@ main .productive .stay-productive a::after{
     top: 2px;
 }
 
-main .feedbacks{
+main .feedbacks .container{
     display: flex;
     padding: 80px;
     justify-content: space-evenly;
     position: relative;
 }
-main .feedbacks .quotes{
+main .feedbacks .container .quotes{
     height: 30px;
     position: absolute;
     left: 110px;
     top: 55px;
 }
-main .feedbacks .testimonial{
+main .feedbacks .container .testimonial{
     max-width: 350px;
     background-color: hsl(219, 30%, 18%);
     padding: 35px;
     z-index: 1;
 }
 
-main .feedbacks .testimonial .profile img{
+main .feedbacks .container .testimonial .profile img{
     border-radius: 100%;
     width: 50px;
     margin-right: 10px;
 }
 
-main .feedbacks .testimonial .profile{
+main .feedbacks .container .testimonial .profile{
     display: flex;
     align-items: center;
     margin-top: 25px;
 }
 
-main .feedbacks .testimonial .profile .profile-description{
+main .feedbacks .container .testimonial .profile .profile-description{
     margin-top: 10px;
 }
 
-main .feedbacks .testimonial p{
+main .feedbacks .container .testimonial p{
     margin-bottom: 10px;
 }
 
-main .email-container{
+main .email-container .container{
     background-color: hsl(217, 28%, 15%);
     text-align: center;
     margin: auto;
@@ -185,33 +182,33 @@ main .email-container{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.582);
 }
 
-main .email-container h2{
+main .email-container .container h2{
     font-size: 2.5rem;
     padding-top: 15px;
 }
-main .email-container p{
+main .email-container .container p{
     width: 770px;
     padding: 30px;
     text-align: center;
 }
 
-main .email-container form{
+main .email-container .container form{
     padding-top: 0;
     
     
 }
-main .email-container form .email-input{
+main .email-container .container form .email-input{
     border-radius: 30px;
     padding: 15px 0 15px 20px;
     margin-right: 15px;
     width: 550px;
 }
 
-main .email-container form .email-input::placeholder, main .email-container form .email-input{
+main .email-container .container form .email-input::placeholder, main .email-container .container form .email-input{
     color: black;
 }
 
-main .email-container form .error{
+main .email-container .container form .error{
     color:  hsl(0, 100%, 63%);
     font-size: 0.8rem;
     position: relative;
@@ -219,16 +216,15 @@ main .email-container form .error{
     text-align: start;
 }
 
-main .email-container form .email-submit{
+main .email-container .container form .email-submit{
     background-color: hsl(198, 60%, 50%);
     padding: 10px 30px 14px;
     border-radius: 30px;   
     
 }
 
-main .email-container form a:hover{
+main .email-container .container form a:hover{
     background-color: hsl(176, 68%, 64%);
-    font-weight: 700;
 }
 
 .footer{
@@ -237,15 +233,15 @@ main .email-container form a:hover{
     
 }
 
-.footer .footer-logo{
+.footer .container .footer-logo{
     padding-left: 85px;
 }
 
-.footer .footer-logo img{
+.footer .container .footer-logo img{
     width: 90px;
 }
 
-.footer .contact{
+.footer .container .contact{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -254,17 +250,17 @@ main .email-container form a:hover{
     margin: 0 25px;
 }
 
-.footer .contact .location{
+.footer .container .contact .location{
     display: flex;
     align-content: flex-end;
 }
 
-.footer .contact .location img{
+.footer .container .contact .location img{
     height: 15px;
     margin-left: 10px;
 }
 
-.footer .contact .location p{
+.footer .container .contact .location p{
     width: 350px;
     margin-left: 15px;
     position: relative;
@@ -272,21 +268,21 @@ main .email-container form a:hover{
 
 }
 
-.footer .contact .phone-email #phone-number, .footer .contact .phone-email #fylo-email{
+.footer .container .contact .phone-email #phone-number, .footer .container .contact .phone-email #fylo-email{
     margin-right: 15px;
     width: 15px;
     line-height: 10px;
 }
 
-.footer .contact .about-us ul li, .footer .contact .contact-us ul li, .footer .contact .phone-email ul li{
+.footer .container .contact .about-us ul li, .footer .container .contact .contact-us ul li, .footer .contact .phone-email ul li{
     margin-bottom: 15px;
 }
 
-.footer .contact ul li a:hover{
-    font-weight: 700;
+.footer .container .contact ul li a:hover{
+    font-weight: 400;
 }
 
-.footer .contact .social-icons .fab{
+.footer .container .contact .social-icons .fab{
     margin-left: 10px;
     width: 30px;
     font-size: 25px;
@@ -294,7 +290,7 @@ main .email-container form a:hover{
     transition: 0.5;
 }
 
-.footer .contact .social-icons i:hover{
+.footer .container .contact .social-icons i:hover{
     color: hsl(176, 68%, 64%);
     border-color: hsl(176, 68%, 64%);
 }

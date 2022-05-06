@@ -7,8 +7,12 @@
     color: hsl(0, 0%, 100%);
 }
 
+.container{
+    max-width: 1440px;
+}
+
 html{
-    font-size: 62,5%;
+    font-size: 14px;
 }
 
 a{
