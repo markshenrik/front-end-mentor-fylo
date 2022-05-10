@@ -1,70 +1,122 @@
-body{
-    font-family: 'Open Sans', sans-serif;
-    line-height: 30px;
+/* HEADER */
+
+.header{
+    background-color: hsl(217, 28%, 15%);
 }
 
 .header .container{
     display: flex;
     justify-content: space-between;
-    background-color: hsl(217, 28%, 15%);
     align-items: center;
-    padding: 40px;
-}
-
-h1, h2{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 2.5rem;
+    padding: 60px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header a img{
-    width: 120px;
+    max-width: 120px;
 }
 
-.menu{
+.header .menu{
     display: flex;
 }
 
-.header nav .menu li{
-    margin-left: 30px;
+.header nav .menu a{
+    margin: 0 2rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease-in-out;
 }
 
 .header nav .menu li a:hover{
     text-decoration: underline;
+    color: #fff;
 }
 
+@media(max-width: 480px){
+    .menu{
+        flex-direction: column;
+    }
+}
+
+/* HEADER */
+
+/* HERO */
 
 .call-to-actions{
+    background-color: hsl(217, 28%, 15%);
+    margin: 0 auto;
+}
+
+.call-to-actions .container .intro-information{
     text-align: center;
     background-color: hsl(217, 28%, 15%);
     background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
     background-repeat: no-repeat;
     background-position: bottom;
-    height: 950px;
+    padding-bottom: 150px;
+}
 
+.call-to-actions .container .cont-imagem{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .call-to-actions .container .intro-information h1{
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     margin: auto;
     line-height: 55px;
 }
 
 .call-to-actions .container .intro-information p{
     padding: 40px;
-    width: 520px;
+    max-width: 460px;
+    width: 100%;
     margin: auto;
 }
 
 .call-to-actions .container .intro-information a{
-    background-color: hsl(198, 60%, 50%);
+    background: linear-gradient(150deg, #65e2d9,#339ecc);
     padding: 15px 80px;
     border-radius: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
 .call-to-actions .container .intro-information a:hover{
-    background-color: hsl(176, 68%, 64%);
+    background: linear-gradient(150deg, #a3eee8, 40%, #85c5e0);
+    padding: 17px 85px;
+    font-weight: 800;
 }
+
+@media(max-width: 600px){
+    .call-to-actions .container .intro-information {
+        background-image: url(../fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        padding-bottom: 0;
+        margin-bottom: 100px;
+    }
+
+    .call-to-actions .container .intro-information h1{
+        font-size: 2em;
+    }
+}
+
+@media(min-width: 1441px){
+    .call-to-actions .container .intro-information{
+        background-image: none;
+    }
+
+    .call-to-actions .container, .call-to-actions .container .intro-information{
+        background-color: hsl(218, 28%, 13%);
+    }
+}
+/* FIM DO HERO */
+
+/* FEATURES */
 
 main{
     background-color: hsl(218, 28%, 13%);
@@ -72,16 +124,27 @@ main{
 
 main .features .container{
     display: grid;
-    grid-template-areas: "Access Security"
-                         "Collaboration Store";
     grid-template: 280px 280px / 370px 370px;
     justify-content: space-evenly;
     align-content: center;
 }
 
+@media(max-width:800px){
+    main .features .container{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 350px;
+        width: 100%;
+        align-items: center;
+        padding: 0 18px;
+        margin: 0 auto;
+    }
+}
+
 main .features .container .functionality{
     max-width: 450px;
-    padding-top: 20px;
+    width: 100%;
+    padding: 20px 10px;
     text-align: center;
 }
 
@@ -93,6 +156,10 @@ main .features .container .functionality img{
     height: 80px;
 }
 
+/* FIM DO FEATURES */
+
+/* PRODUCTIVE */
+
 main .productive .container{
     display: flex;
     align-items: center;
@@ -100,14 +167,25 @@ main .productive .container{
     padding: 10px;
 }
 
+main .productive .container .img-productive{
+    max-width: 700px;
+    width: 100%;
+}
+
+main .productive .container .stay-productive{
+    margin-left: 8px;
+}
+
 main .productive .container .stay-productive h2{
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     line-height: 50px;
 }
 
 main .productive .container .stay-productive p{
     margin-top: 10px;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
 }
 
 main .productive .container .stay-productive a{
@@ -116,7 +194,7 @@ main .productive .container .stay-productive a{
 }
 
 main .productive .container .stay-productive a:hover{
-    color: white;
+    color: #fff;
 }
 
 main .productive .container .stay-productive a::after{
@@ -129,52 +207,93 @@ main .productive .container .stay-productive a::after{
     left: 5px;
     top: 2px;
 }
+@media(max-width: 390px){
+    main .productive .container .stay-productive h2{
+        max-width: 260px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    main .productive .container .img-productive{
+        text-align: center;
+    }
+
+    main .productive .container{
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    main .productive .container .stay-productive h2{
+        font-size: 1.5rem;
+    }
+}
+
+/* FIM DO PRODUCTIVE */
+
+/* FEEDBACKS */
 
 main .feedbacks .container{
     display: flex;
-    padding: 80px;
+    margin: 0 10%;
+    padding-top: 80px;
     justify-content: space-evenly;
     position: relative;
+    line-height: 1.8rem;
 }
-main .feedbacks .container .quotes{
+
+
+
+main .feedbacks .container .testimonial{
+    max-width: 300px;
+    width: 100%;
+    background-color: hsl(219, 30%, 18%);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+}
+
+main .feedbacks .container .quotes-container .quotes{
     height: 30px;
     position: absolute;
-    left: 110px;
-    top: 55px;
+    left: -5px;
+    top: -25px;
 }
-main .feedbacks .container .testimonial{
-    max-width: 350px;
-    background-color: hsl(219, 30%, 18%);
-    padding: 35px;
-    z-index: 1;
+
+main .feedbacks .container .testimonial .testimonial-item, main .feedbacks .container .testimonial .profile .profile-description{
+    font-size: 0.85rem;
 }
 
 main .feedbacks .container .testimonial .profile img{
     border-radius: 100%;
-    width: 50px;
+    width: 30px;
     margin-right: 10px;
 }
 
 main .feedbacks .container .testimonial .profile{
     display: flex;
     align-items: center;
-    margin-top: 25px;
-}
-
-main .feedbacks .container .testimonial .profile .profile-description{
     margin-top: 10px;
 }
 
-main .feedbacks .container .testimonial p{
-    margin-bottom: 10px;
+@media(max-width: 1155px){
+    main .feedbacks .container{
+        flex-wrap: wrap;
+        gap: 15px;
+    }
 }
+
+/* FIM DOS FEEDBACKS */
+
+/* EMAIL CONTAINER */
 
 main .email-container .container{
     background-color: hsl(217, 28%, 15%);
     text-align: center;
     margin: auto;
-    width: fit-content;
-    padding: 30px 60px;
+    max-width: 900px;
+    width: 100%;
+    padding: 30px;
     position: relative;
     z-index: 1;
     top: 100px;
@@ -186,26 +305,28 @@ main .email-container .container h2{
     font-size: 2.5rem;
     padding-top: 15px;
 }
+
 main .email-container .container p{
-    width: 770px;
+    max-width: 770px;
+    width: 100%;
     padding: 30px;
     text-align: center;
 }
 
 main .email-container .container form{
     padding-top: 0;
-    
-    
 }
+
 main .email-container .container form .email-input{
     border-radius: 30px;
     padding: 15px 0 15px 20px;
     margin-right: 15px;
-    width: 550px;
+    max-width: 550px;
+    width: 100%
 }
 
 main .email-container .container form .email-input::placeholder, main .email-container .container form .email-input{
-    color: black;
+    color: #000;
 }
 
 main .email-container .container form .error{
@@ -217,15 +338,41 @@ main .email-container .container form .error{
 }
 
 main .email-container .container form .email-submit{
-    background-color: hsl(198, 60%, 50%);
+    background: linear-gradient(150deg, #65e2d9, #339ecc);
     padding: 10px 30px 14px;
-    border-radius: 30px;   
-    
+    border-radius: 30px;
+    transition: all 0.3s ease-in-out;
 }
 
 main .email-container .container form a:hover{
-    background-color: hsl(176, 68%, 64%);
+    background: linear-gradient(150deg, #a3eee8, #85c5e0);
 }
+
+@media(max-width: 940px){
+    main .email-container .container h2{
+        font-size: 1.5rem;
+    }
+
+    main .email-container .container form .email-submit{
+        display: block;
+        margin-top: 10px; 
+    }
+
+    main .email-container{
+        margin: 0 18px;
+    }
+
+    main .email-container .container form .email-input{
+        display: block;
+        max-width: 1000px;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+/* FIM DO EMAIL CONTAINER */
+
+/* FOOTER */
 
 .footer{
     background-color: hsl(216, 53%, 9%);
@@ -234,11 +381,12 @@ main .email-container .container form a:hover{
 }
 
 .footer .container .footer-logo{
-    padding-left: 85px;
+    padding-left: 5em;
 }
 
 .footer .container .footer-logo img{
-    width: 90px;
+    max-width: 150px;
+    width: 100%;
 }
 
 .footer .container .contact{
@@ -261,7 +409,8 @@ main .email-container .container form a:hover{
 }
 
 .footer .container .contact .location p{
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     margin-left: 15px;
     position: relative;
     bottom: 5px;
@@ -270,27 +419,58 @@ main .email-container .container form a:hover{
 
 .footer .container .contact .phone-email #phone-number, .footer .container .contact .phone-email #fylo-email{
     margin-right: 15px;
-    width: 15px;
+    max-width: 15px;
+    width: 100%;
     line-height: 10px;
 }
 
-.footer .container .contact .about-us ul li, .footer .container .contact .contact-us ul li, .footer .contact .phone-email ul li{
+.footer .container .contact ul li{
     margin-bottom: 15px;
 }
 
-.footer .container .contact ul li a:hover{
-    font-weight: 400;
+.footer .container .contact a{
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease-in-out;
 }
 
-.footer .container .contact .social-icons .fab{
-    margin-left: 10px;
-    width: 30px;
-    font-size: 25px;
-    padding: 10px;
-    transition: 0.5;
+.footer .container .contact a:hover{
+    color: #fff;
 }
 
-.footer .container .contact .social-icons i:hover{
+.footer .container .contact .social-icons a{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    width: 40px;
+    font-size: 15px;
+    padding: 7px;
+    transition: all 0.5 ease-in-out;
+}
+
+.footer .container .contact .social-icons a:hover, i:hover{
     color: hsl(176, 68%, 64%);
     border-color: hsl(176, 68%, 64%);
 }
+
+@media(max-width: 870px){
+    .footer .container .footer-logo{
+        text-align: center;
+        padding: 0;
+    }
+
+    .footer .container .contact{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer .container .contact .location p{
+        max-width: 800px;
+        width: 100%;
+    }
+    .footer .container .footer-logo{
+        margin: 0 auto;
+    }
+}
+
+/* FIM DO FOOTER */
