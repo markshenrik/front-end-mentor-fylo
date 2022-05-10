@@ -11,7 +11,6 @@ This is a solution to the [Fylo dark theme landing page challenge on Frontend Me
   - [Solution](#solution)
   - [Links](#links)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
@@ -41,8 +40,6 @@ Users should be able to:
 ![mobile-version](./fylo-dark-theme-landing-page-master/design/mobile-version.gif)
 ### 🔗 Links
 
-<!-- ✅ Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-
 ✅ Live Site: [https://markshenrik.github.io/front-end-mentor-fylo/](https://markshenrik.github.io/front-end-mentor-fylo/)
 <br><br>
 
@@ -53,14 +50,9 @@ Users should be able to:
 - Flexbox
 - Grid
 <br><br>
-
-### 🔧 Useful resources
-
-- [[Tutorial] Validação de Email via JavaScript](https://www.youtube.com/watch?v=0EHlU55ZfbA&list=WL&index=1) - This Lucas Soares' YouTube video helped me to do the JS code for form validation alert.
-
 ## 🙋‍♂️ Author
 <hr>
 
 - Frontend Mentor - [@markshenrik](https://www.frontendmentor.io/profile/markshenrik)
-- LinkedIn - [Marks Henrik](https://www.linkedin.com/in/marks-henrik)
+- LinkedIn - [Marks Henrik](https://www.linkedin.com/in/marks-henrik-697ab3150/)
 
