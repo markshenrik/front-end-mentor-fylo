@@ -32,8 +32,8 @@
     color: #fff;
 }
 
-@media(max-width: 480px){
-    .menu{
+@media(max-width: 560px){
+    .header .menu{
         flex-direction: column;
     }
 }
