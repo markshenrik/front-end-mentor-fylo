@@ -54,5 +54,5 @@ Users should be able to:
 <hr>
 
 - Frontend Mentor - [@markshenrik](https://www.frontendmentor.io/profile/markshenrik)
-- LinkedIn - [Marks Henrik](https://www.linkedin.com/in/marks-henrik-697ab3150/)
+- LinkedIn - [Marks Henrik](https://www.linkedin.com/in/markshenrik/)
 
