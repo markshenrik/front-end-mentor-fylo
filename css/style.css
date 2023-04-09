@@ -438,13 +438,20 @@ main .email-container .container form a:hover{
 }
 
 .footer .container .contact .social-icons a{
+    display: inline-block;
     border: 1px solid #fff;
     border-radius: 50%;
     margin: 0 10px;
-    width: 40px;
+    width: 30px;
+    height: 30px;
     font-size: 15px;
     padding: 7px;
     transition: all 0.5 ease-in-out;
+}
+
+.footer .container .contact .social-icons .fab{
+    position: relative;
+    bottom: 7px;
 }
 
 .footer .container .contact .social-icons a:hover, i:hover{
